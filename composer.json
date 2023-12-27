@@ -22,5 +22,9 @@
     "minimum-stability": "dev",
     "require": {
         "league/oauth2-client": "^2.4"
-    }
+    },
+    "repositories": [
+            {"type": "composer", "url": "https://repo.packagist.com/blueskyci/"},
+            {"packagist.org": false}
+        ]
 }
