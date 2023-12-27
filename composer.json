@@ -1,0 +1,26 @@
+{
+    "name": "blueskyci/laravel-point-click-care",
+    "version": "2.0.0",
+    "description": "pcc api integration for laravel",
+    "type": "library",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Blueskyci\\LaravelPointClickCare\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Blueskyci\\PointClickCare\\PointClickCareServiceProvider"
+            ],
+            "aliases": {
+                "PointClickCare": "Blueskyci\\PointClickCare\\PointClickCare"
+            }
+        }
+    },
+    "minimum-stability": "dev",
+    "require": {
+        "league/oauth2-client": "^2.4"
+    }
+}
