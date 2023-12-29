@@ -1,9 +1,9 @@
 <?php
 
-namespace AtumSystems\PointClickCare;
+namespace Blueskyci\PointClickCare;
 
-use AtumSystems\PointClickCare\Http\Client;
-use AtumSystems\PointClickCare\Resources\Resource;
+use Blueskyci\PointClickCare\Http\Client;
+use Blueskyci\PointClickCare\Resources\Resource;
 use Exception;
 
 class PointClickCare {
@@ -43,7 +43,7 @@ class PointClickCare {
      */
     public function __call(string $name, $args) : Resource
     {
-        $resource = 'AtumSystems\\PointClickCare\\Resources\\'.ucfirst($name);
+        $resource = 'Blueskyci\\PointClickCare\\Resources\\'.ucfirst($name);
 
         return new $resource($this->client, ...$args);
     }

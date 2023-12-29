@@ -1,6 +1,6 @@
 <?php
 
-namespace AtumSystems\PointClickCare;
+namespace Blueskyci\PointClickCare;
 
 use Illuminate\Support\ServiceProvider;
 

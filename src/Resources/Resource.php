@@ -1,6 +1,6 @@
 <?php
 
-namespace AtumSystems\PointClickCare\Resources;
+namespace Blueskyci\PointClickCare\Resources;
 
 abstract class Resource {
     protected $client;
