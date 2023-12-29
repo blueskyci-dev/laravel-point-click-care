@@ -1,6 +1,6 @@
 {
     "name": "blueskyci/laravel-point-click-care",
-    "version": "2.0.0",
+    "version": "0.0.4",
     "description": "pcc api integration for laravel",
     "type": "library",
     "license": "MIT",
