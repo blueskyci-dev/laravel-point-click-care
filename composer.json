@@ -1,30 +1,32 @@
 {
     "name": "blueskyci/laravel-point-click-care",
-    "version": "0.0.6",
+    "version": "0.0.7",
     "description": "A laravel wrapper for Point Click Care",
     "type": "library",
     "license": "MIT",
     "autoload": {
         "psr-4": {
-            "Bueskyci\\PointClickCare\\": "src/"
+            "Blueskyci\\PointClickCare\\": "src/"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "Bueskyci\\PointClickCare\\Tests\\": "tests/"
+            "Blueskyci\\PointClickCare\\Tests\\": "tests/"
         }
     },
     "extra": {
         "laravel": {
             "providers": [
-                "Bueskyci\\PointClickCare\\PointClickCareServiceProvider"
+                "Blueskyci\\PointClickCare\\PointClickCareServiceProvider"
             ],
             "aliases": {
-                "PointClickCare": "Bueskyci\\PointClickCare\\PointClickCare"
+                "PointClickCare": "Blueskyci\\PointClickCare\\PointClickCare"
             }
         }
     },
     "require": {
+        "php": ">=7.4",
+        "illuminate/support": "5.6.*|5.7.*|5.8.*|^6.0|^7.0|^8.0|^9.0|^10.0",
         "league/oauth2-client": "^2.4"
     },
     "require-dev": {
